@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | Home</title>
+</head>
+
+<body>
+    <form>
+        <h1 style="text-align: center;">Registration form</h1>
+        <p>Name: <input type="text" name="name" required></p>
+        <p>PASSWORD: <input type="password" name="password" id="password" required></p>
+        <p>E-mail: <input type="email" name="email" id="email" required></p>
+        <p>PHONE NUMBER: <input type="number" name="phone number" id="phone number" required></p>
+        <fieldset>
+            <legend>Gender </legend>
+            <p> male <input type="radio" name="Gender" id="male" required> female <input type="radio" name="Gender"
+                    id="female" required></p>
+        </fieldset>
+        <p>D.O.B: <input type="date" name="dob" id="dob" required></p>
+        <h2>LANGUAGE</h2>
+        <p><input type="checkbox" name="English" id="101">English</p>
+        <p><input type="checkbox" name="Telgu" id="102">Telgu</p>
+        <p><input type="checkbox" name="Hindi" id="103">Hindi</p>
+        <p><input type="checkbox" name="Tamil" id="104">Tamil</p>
+        <h2>Select your city</h2>
+        <select name="city" >
+            <option value="">--select anyone--</option>
+            <option value="delhi">delhi</option>
+            <option value="Banglore">Banglore</option>
+            <option value="pune">pune</option>
+            <option value="mumbai">mumbai</option>
+        </select><br><br>
+        <p>Address: <textarea name="Address" id="Address" cols="50" rows="5"></textarea></p>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+</body>
+
+</html>
