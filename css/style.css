@@ -11,7 +11,7 @@ p{
     font-size: small;
     text-align: justify;
     /* text-wrap: nowrap; */
-    font-weight: 600;
+    font-weight: bold;
     font-style: italic;
     font-variant: small-caps;
 }
