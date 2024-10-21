@@ -38,6 +38,16 @@
         /* div~p{
         color: aqua;
         } */
+        /* pseudo class */
+        a:hover{color: aqua;}
+        a:visited{color: red;}
+        a:active{color: antiquewhite;}
+        /* div:nth-child(3){background-color: aqua;} */
+
+        /* pseudo elements */
+        p::first-letter{font-size: larger; color: aqua;}
+        p::after{content: 'read more'; color: brown;}
+        p::first-line{text-decoration: underline; text-transform: uppercase;}
     </style>
 </head>
 <body>
@@ -47,7 +57,8 @@
     combinators - space, child, general sibling and adjuscent
     pseudo class - change state of the element
     pseudo elements - modify aand style of the elemnt-->
-
+    <h1>Selector in css</h1>
+    <a href="">Click on me</a>
     <div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias temporibus fugit quam animi dolorum eum? Nam, velit dolorum. Corporis, fugiat?</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, nam explicabo consequuntur ab, consequatur facilis assumenda asperiores esse consectetur necessitatibus quidem et ad eligendi maxime officia, possimus vero est praesentium.</p>
