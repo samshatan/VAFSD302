@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            color: rgb(14, 71, 17);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+         /* Simple selector */
+        /* div{
+            background-color: rgb(0, 0, 0);
+        }
+        p{
+            color: rgb(255, 0, 208);
+        }
+        .para{
+            color: bisque;
+        }
+        #text{
+            color: brown
+        } */
+        /* Combinator */
+        /* div p{
+            background-color: aqua;
+            color: brown;
+        } */
+        /* div>p{
+        color: chartreuse;
+        } */
+        /* div+p{
+            color: aqua;
+        } */
+        /* div~p{
+        color: aqua;
+        } */
+        /* pseudo class */
+        a:hover{color: aqua;}
+        a:visited{color: red;}
+        a:active{color: antiquewhite;}
+        /* div:nth-child(3){background-color: aqua;} */
+
+        /* pseudo elements */
+        p::first-letter{font-size: larger; color: aqua;}
+        p::after{content: 'read more'; color: brown;}
+        p::first-line{text-decoration: underline; text-transform: uppercase;}
+    </style>
+</head>
+<body>
+    <!-- types of selector
+    universal - *
+    simple - element, attribute, class and id
+    combinators - space, child, general sibling and adjuscent
+    pseudo class - change state of the element
+    pseudo elements - modify aand style of the elemnt-->
+    <h1>Selector in css</h1>
+    <a href="">Click on me</a>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias temporibus fugit quam animi dolorum eum? Nam, velit dolorum. Corporis, fugiat?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, nam explicabo consequuntur ab, consequatur facilis assumenda asperiores esse consectetur necessitatibus quidem et ad eligendi maxime officia, possimus vero est praesentium.</p>
+        <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sapiente, nobis quod rem ut, optio laborum libero magnam laudantium dolores accusantium saepe earum natus nisi cum, officiis consectetur. Numquam blanditiis quaerat iure pariatur quia porro vero natus quo. Voluptas, nostrum?</p>
+        <main>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et nihil at voluptates consequatur explicabo reiciendis perspiciatis obcaecati odio non.</p>
+        </main>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum nisi in quos accusamus fugiat vero similique architecto minima quod fugit.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, dolores error. Officiis ab doloremque quae aperiam culpa fugit nemo dolores? Fugit veritatis consequuntur maxime ipsum impedit! Illum facilis iste nesciunt.</p>
+</body>
+</html>

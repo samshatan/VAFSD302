@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            background-color: rgb(26, 55, 120);
+            padding: 10px;
+        }
+        ul li{
+            margin: 0 10px;
+            padding-right: 10px;
+            border-right: 1px solid rgb(255, 255, 255);
+        }
+        ul li:nth-child(6){
+            border: 0;
+            padding-right: 0;
+        }
+        ul li a{
+            text-decoration: none;
+            color: chartreuse;
+        }
+        
+        ul li a:hover{
+            color: white;
+        }
+        #n{
+            background-color: rgb(0, 34, 255);
+            border-radius: 30px;
+            padding: 4px;
+            color: white;
+        }
+        #m{
+            background-color: white;
+            border-radius: 30px;
+            padding: 4px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="">Product</a></li>
+        <li><a href="">Integrations</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">Resources</a></li>
+        <li><button id="m">Login</button></li>
+        <li><button id="n">Get Started</button></li>
+    </ul>
+</body>
+</html>
