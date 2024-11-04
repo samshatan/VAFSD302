@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout 2 | HTML-CSS</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    main{
+        width: 1200px;
+        height: auto;
+        background-color: antiquewhite;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #logo{
+        width: 100%;
+        height: 100px;
+        background-color: aqua;
+        align-content: center;
+    }
+    #container{
+        width: 100%;
+        height: auto;
+        margin: 5px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: space-between;
+
+    }
+    #container div{
+        width: 280px;
+        height: 250px;
+        background-color: yellowgreen;
+    }
+    #box{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 5px;
+        margin: 5px 0;
+    }
+    .boxes{
+        flex-grow: 1;
+        background-color: rgb(208, 73, 195);
+        align-content: center;
+    }
+    footer{
+        width: 100%;
+        height: 100px;
+        background-color: aqua;
+        align-content: center;
+    }
+    </style>
+</head>
+<body>
+    <main><!--main start-->
+        <div id="logo"><h2>Logo</h2></div>
+
+        <div id="container">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div id="box">
+            <div class="boxes"><h2>Box1</h2></div>
+            <div class="boxes"><h2>Box2</h2></div>
+            <div class="boxes"><h2>Box3</h2></div>
+        </div>
+        <footer><h2>Footer</h2></footer>
+    </main><!--Maun end-->
+</body>
+</html>

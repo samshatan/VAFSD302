@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Lyaout 1 | HTML-CSS</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    main{
+        width: 1200px;
+        height: auto;
+        background-color: antiquewhite;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #logo{
+        width: 100%;
+        height: 100px;
+        background-color: rgb(198, 154, 243);
+        align-content: center;
+    }
+    nav{
+        width: 100%;
+        height: 50px;
+        background-color: rgb(225, 91, 91);
+        margin: 5px 0;
+        align-content: center;
+    }
+    header{
+        width: 100%;
+        height: 150px;
+        background-color: aqua;
+        margin: 5px 0;
+        align-content: center;
+    }
+    #container{
+        width: 100%;
+        height: 500px;
+        margin: 5px 0;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    #side-area{
+        width: 400px;
+        height: 100%;
+        background-color: rgb(136, 231, 120);
+        align-content: center;
+    }
+    #body-area{
+        width: 800px;
+        height: 100%;
+        background-color: aquamarine;
+        align-content: center;
+    }
+    footer{
+        width: 100%;
+        height: 120px;
+        margin: 5px 0;
+        background-color: rgb(173, 96, 246);
+        align-content: center;
+    }
+    </style>
+</head>
+<body>
+    <main><!--main start-->
+        <div id="logo"><h2>Logo</h2></div>
+
+        <nav><h2>Navigation</h2></nav>
+
+        <header><h2>Header</h2></header>
+
+        <div id="container">
+            <div id="side-area"><h2>Side Area</h2></div>
+            <div id="body-area"><h2>Body Area</h2></div>
+        </div>
+
+        <footer><h2>Footer</h2></footer>
+    </main><!--main end-->
+</body>
+</html>
