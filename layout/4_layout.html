@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 4 | HTML-CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            width: 1200px;
+            margin: auto;
+            height: auto;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        #logo{
+            width: 100%;
+            height: 100px;
+            background-color: aqua;
+            align-content: center;
+        }
+        #container{
+            margin: 5px 0;
+            width: 100%;
+            height: 500px;
+            align-content: center;
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 5px;
+            justify-content: space-between;
+        }
+        nav{
+            width: 50%;
+            height: 100%;
+            background-color: rgb(119, 217, 230);
+            margin-right: 5px;
+            align-content: center;
+        }
+        #box{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            gap: 5px;
+            justify-content: space-between;
+        }
+        header{
+            width: 100%;
+            height: 30%;
+            background-color: coral;
+            align-content: center;
+        }
+        #body{
+            width: 100%;
+            height: 70%;
+            background-color: yellow;
+            align-content: center;
+        }
+        footer{
+            margin: 5px 0;
+            width: 100%;
+            height: 100px;
+            background-color: violet;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="logo"><h2>Logo</h2></div>
+        <div id="container">
+            <nav><h2>Side Area / Navigation</h2></nav>
+            <div id="box">
+                <header><h2>Header</h2></header>
+                <div id="body"><h2>Body area</h2></div>
+            </div>
+        </div>
+        <footer><h2>Footer</h2></footer>
+    </main>
+</body>
+</html>
