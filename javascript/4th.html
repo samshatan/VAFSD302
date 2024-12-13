@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Var</title>
+</head>
+<body>
+    <script>
+        // primitive data value types
+        let name = "Sameer";
+        console.log(typeof(name));
+
+        let mob = "7903516362";
+        console.log(typeof(mob));
+
+        let ismarried = false;
+        console.log(typeof(ismarried));
+
+        let city = null;
+        console.log(typeof(city));
+
+        let pincode;
+        console.log(typeof(pincode));
+
+        // reference type
+
+        // object:- collection of its name and value
+
+        let myinfo = {
+            name:"Sameer",
+            age:19,
+            mob:7903516362,
+            address:"Raebareli",
+            ismarried:false,
+            pincode:229001
+        }
+        console.log(myinfo.name);
+        console.log(myinfo.age);
+        console.log(myinfo.mob + " and address is " + myinfo.address);
+        console.log(myinfo.ismarried);
+        console.log(myinfo.pincode);
+        console.log(myinfo['mob']);
+        console.log(myinfo['address']);
+
+        // function : block of code, which generate the output once cals on invokes
+
+        function neww(){
+            console.log("Thanks to visit her");
+            console.log(typeof(neww));
+        }
+        neww()
+        let msg = function(){
+            console.log("Thanks to visit her");
+            console.log(typeof(msg));
+        }
+        msg();
+
+        // array: it is a collection of any data types (anything)
+
+        let student = [
+            "Sameer",
+            19,
+            7903516362,
+            "sameermaurya97044@gmai.com",
+            false,
+            "Raebareli",
+            229001
+            ];
+            console.log(student[2]);
+            console.log(student[0]);
+            console.log(student[4]);
+            
+        // creating object having all data types values
+
+        let stu = {
+            name : ["Sameer","Sharad","Tanmay","Sagar","Sahil","Shweta","Sunil","Saroj"],
+            age : 30,
+            course : "Web",
+            add : {
+                area : "Soniya Nagar",
+                city : "Raebareli",
+                pincode : 229001
+            },
+            getinfo : function(){
+                return this .name[1] + " " + this.age
+            },
+            ismarried : false
+        };
+        console.log(stu.getinfo()); // object with function
+        console.log(stu.name[1]); // object with array
+        console.log(stu.add.area); // object with object
+        console.log(stu.add);
+        
+    </script>
+</body>
+</html>
