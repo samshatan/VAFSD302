@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        function msg(){  // statement
+            alert("Hello JS");
+        }
+        msg(); // function calling
+
+
+        // function declaration for the above code
+
+        let msg1=function(){
+            console.log("Hello js");
+        }
+        msg1();
+
+
+        // function with parameters
+
+        let add=function(a,b){
+            let c=a+b;
+            console.log(c);
+            console.log(`Addition of two number is ${c}`);
+        }
+        add(4,5);
+
+
+        // function return 
+
+        let mul=function(x,y){
+            mulnew=x*y;
+            return mulnew;
+        }
+        let result=mul(10,5);
+        console.log(result);
+        console.log(mulnew);
+
+        // arrow function(anonymous function)
+
+        let add1=function(a,b){
+            let c=a+b;
+            console.log(c);
+            console.log(`Addition of two number is ${c}`);
+        }
+        add1(4,5);
+        // arrow function of above code
+        let add2=(p,q)=>console.log(`Addition of two number ${p+q}`);
+        add2(56,3);
+    </script>
+</body>
+</html>
