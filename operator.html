@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator in JS</title>
+</head>
+<body>
+    <script>
+        // arithmetic operators
+
+        let num1=5;
+        let num2=10;
+        console.log(num1+num2);
+        console.log(num1-num2);
+        console.log(num2/num1);
+        console.log(num1*num2);
+        console.log(num2%num1);
+
+
+        // comparison operators ==, >=, <=, !=, ===
+
+        let x=10;
+        let y=20;
+        let z="10";
+        if(x==y){
+            console.log("True Statement");
+        }
+        else{
+            console.log("False Statement");
+        }
+        if(x!=y){
+            console.log("True Statement");
+        }
+        else{
+            console.log("False Statement");
+        }
+        if(x<=y){
+            console.log("True Statement");
+        }
+        else{
+            console.log("False Statement");
+        }
+        if(x>=y){
+            console.log("True Statement");
+        }
+        else{
+            console.log("False Statement");
+        }
+        if(x===y){
+            console.log("True Statement");
+        }
+        else{
+            console.log("False Statement");
+        }
+        if(x===z){
+            console.log("True Statement");
+        }
+        else{
+            console.log("False Statement");
+        }
+
+
+        // assignment operators +=, -=, *=, /=
+
+        let p=10;
+        let q=20;
+        console.log(p+=q); // p=p+q
+        console.log(p-=q); // p=p-q
+        console.log(p*=q); // p=p*q
+        console.log(p/=q); // p=p/q
+
+
+        // logic operators
+
+        let m=20;
+        let n=30;
+        let o=25;
+        if(m==n || n>o){
+            console.log("Valid Satement");
+        }
+        else{
+            console.log("Invalid Statement");
+        }
+        if(m==n && n>o){
+            console.log("Valid Satement");
+        }
+        else{
+            console.log("Invalid Statement");
+        }
+
+        // ternary operators
+
+            console.log((x>=y)? "x is smaller": "Y is smaller");
+    </script>
+</body>
+</html>
