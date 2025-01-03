@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo">.....</h1>
+    <h2 class="demo">yyy</h2>
+    <p class="demo">fbdshnzxm </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quasi voluptatum temporibus alias eaque neque consequuntur! Quas repellendus maxime, saepe id sunt aliquam!</p>
+    <h3 class="demo">fjds.z</h3>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+    <img src="#" alt="abes" title="" id="img">
+    <button ondblclick="msg()">click on me</button>
+    <script>
+        msg=function(){
+            // by id
+        // document.getElementById("demo").innerHTML="Welcome to React";
+            // by classmate
+        
+        /* let element=document.getElementsByClassName("demo")
+        // element[0].innerHTML="Thanks"
+        for (x in element){
+            element[x].innerHTML="Thanks";
+            element[x].style.backgroundColor="red";
+        }*/
+
+        // by tag name
+
+        /*let element=document.getElementsByTagName("p");
+        element[1].style.color="green";*/
+
+        // by selector
+
+        /*let element=document.querySelector("ul li:nth-child(3)");
+        element.style.color="blue";
+        element.innerHTML="Gallery"*/
+
+        // by query all
+        /*let element=document.querySelectorAll("ul li");
+        element[1].style.color="blue";
+        element[1].innerHTML="Gallery"*/
+
+        // get attribute
+
+        let element=document.getElementById("img");
+        let result=element.getAttribute("alt");
+        document.getElementById("demo").innerText=result;
+
+        /// set attribute
+        element.setAttribute("title","abes colledge");
+    }
+    </script>
+</body>
+</html>
