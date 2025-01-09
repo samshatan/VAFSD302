@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Nishant Portfolio</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: poppins, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(6, 6, 45);
+            color: white;
+            height: 100%;
+            width: 100%;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(13, 13, 53);
+        }
+        h1 {
+            font-size: 1.5rem;
+        }
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 35px;
+        }
+        .maincontainer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 90px;
+        }
+        .left {
+            width: 50%;
+            margin: 20px;
+        }
+        .right {
+            height: 450px;
+            width: 450px;
+            margin: 20px;
+            border: 5px solid white;
+            border-radius: 50%;
+        }
+        .skills {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+        .images {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .images img {
+            width: 100px;
+            height: 100px;
+        }
+        .images div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .images div p {
+            font-size: 1.5rem;
+        }
+        
+        .html {
+            border: 3px solid white;
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            background-color: rgb(18, 18, 74);
+        }
+        .css{
+            border: 3px solid white;
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            background-color: rgb(18, 18, 74);
+        }
+        .js {
+            border: 3px solid white;
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            background-color: rgb(18, 18, 74);
+        }
+        .projects {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+        .bookstore {
+            border: 3px solid white;
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            background-color: rgb(18, 18, 74);
+        }
+        .randomGradient {
+            border: 3px solid white;
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            background-color: rgb(18, 18, 74);
+        }
+        .randomGradient > img {
+            border-radius: 10px;
+        }
+        .clock {
+            border: 3px solid white;
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            background-color: rgb(18, 18, 74);
+        }
+        
+        button {
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            border: 2px solid rgb(14, 22, 116);
+            background-color: rgb(12, 44, 102);
+            color: white;
+            cursor: pointer;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            animation: glow 1.5s infinite alternate;
+        }
+        
+        button:hover {
+            transform: scale(1.01);
+            box-shadow: 0 0 20px rgba(25, 176, 213, 0.6);
+        }
+        .button-clicked {
+            animation: buttonClickAnimation 0.5s forwards;
+        }
+        @keyframes buttonClickAnimation {
+            to {
+                transform: scale(1);
+                background-color: black;
+                color: white;
+            }
+        }
+        .navbuttons {
+            background-color: rgb(13, 13, 53);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <h1>My Portfolio</h1>
+            </div>
+            <ul>
+                <li><button class="navbuttons" onclick="document.getElementById('about').scrollIntoView()">About</button></li>
+                <li><button class="navbuttons" onclick="document.getElementById('skills').scrollIntoView()">Skills</button></li>
+                <li><button class="navbuttons" onclick="document.getElementById('projects').scrollIntoView()">Projects</button></li>
+                <li><button class="navbuttons" onclick="document.getElementById('contact').scrollIntoView()">Contact</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="maincontainer">
+        <div class="left">
+            <b style="font-size: 2rem;">Nishant Patel</b>
+            <h3>A Little Detail About Me</h3>
+            <p>I am a college student currently in second year of B.Tech in the Computer Science branch. Passionate about technology, dedicated to learning coding and expanding programming skills. With a keen interest in mastering various technologies and concepts also actively exploring areas like Data Structures and Algorithms. I am enthusiastic for problem-solving and building practical solutions to excel in the field of computer science.</p>
+        </div>
+        <img src="/IMG_20241117_170848910_HDR_AE.jpg" class="right" alt="vasu">
+    </div>
+    
+    <div class="skills">
+        <p>MY SKILLS</p>
+    </div>
+    
+    <div class="images">
+        <div class="html">
+            <img src="/HTML5_Badge.svg.png" alt="html">
+            <p>HTML</p>
+        </div>
+        <div class="css">
+            <img src="/css.svg" alt="css">
+            <p>CSS</p>
+        </div>
+        <div class="js">
+            <img src="/javascript-1.svg" alt="js">
+            <p>JS</p>
+        </div>
+    </div>
+    <div class="projects">
+        <p>MY PROJECTS</p>
+    </div>
+    <div class="images">
+        <div class="bookstore">
+            <img src="/istockphoto-1034157536-612x612.jpg" alt="book_Store">
+            <p>BOOK STORE</p>
+            <button id="bookstore">LOOK</button>
+        </div>
+        <div class="randomGradient">
+            <img src="/calculatoor.png" alt="calculator">
+            <p>CALCULATOR</p>
+            <button id="calButton">LOOK</button>
+        </div>
+    </div>
+    <script>
+    function handleClick(buttonId, url) {
+        const button = document.getElementById(buttonId);
+        button.classList.add('button-clicked');
+        setTimeout(() => {
+            window.location.href = url;
+        }, 500);
+    }
+        document.getElementById('bookstore').addEventListener('click', function () {
+            window.location.href = 'https://github.com/samshatan/VAFSD302/tree/main/Book_Store';
+        });
+        
+        document.getElementById('gradientButton').addEventListener('click', function () {
+            window.location.href = 'https://github.com/samshatan/VAFSD302/tree/main/Book_Store';
+        });
+    </script>
+</body>
+</html>
+</body>

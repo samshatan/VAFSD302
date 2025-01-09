@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create | Get Element </title>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea molestiae illo nulla accusamus! Fugiat iste sit accusamus, aliquid quibusdam modi!
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid sit, velit similique provident nemo pariatur facere, quis commodi fugit nulla illum quidem maiores reprehenderit quasi, consequuntur optio quisquam enim odio!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam fuga, obcaecati, voluptatem sint blanditiis eligendi ipsam tempora maiores, itaque sapiente consequuntur perferendis a ipsum quos temporibus vitae minima possimus hic.
+    </p>
+    <img src="" alt="logo" id="img1" title="">
+    <script>
+       //  create element 
+
+        const heading=document.createElement("h1");
+
+        // get element 
+        const bodytag=document.getElementsByTagName("body");
+
+        // append heading in reference of b ody tage
+
+        bodytag[0].append(heading);
+
+        heading.innerText="heading h1 is created";
+        heading.style.color="red";
+
+        const p11=document.createElement("h1");
+        const paratag=document.getElementsByTagName("p")
+        paratag[0].append(p11);
+        p11.innerText="Heading 2 is created";
+
+        // get attribute
+
+        let element=document.getElementById("img1");
+        let result=element.getAttribute("alt");
+         
+        result.innerText="Abes Logo";
+    </script>
+</body>
+</html>
