@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1"">Hello Javascript</h1>
+    <input type="text" name="" id="name" placeholder="Enter name"/>
+    <button onclick="clickevent()">Click on me</button>
+    <script>
+        let clickevent=function(){
+            let element=document.getElementById("h1");
+            element.style.color="red";
+
+            let inputelement=document.getElementById("name");
+            let inputvalue=inputelement.value;
+            if(inputvalue===null || inputvalue.trim()===""){
+                inputelement.style.background="blue";
+                inputelement.style.backgroundColor="red";
+            }
+            else{
+                inputelement.style.borderColor="red";
+            }
+            
+        }
+    </script>
+</body>
+</html>
