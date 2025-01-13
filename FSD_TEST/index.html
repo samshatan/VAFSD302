@@ -23,34 +23,5 @@
             </form>
         </div>
     </div>
-    <script>
-        const loginForm = document.querySelector("form");
-   const usernameInput = document.getElementById("username");
-   const passwordInput = document.getElementById("password");
-   const errorMessage = document.createElement("div");
-   errorMessage.style.color = "red";
-   errorMessage.style.marginBottom = "10px";
-   loginForm.insertBefore(errorMessage, loginForm.firstChild);
-   loginForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-    const username = usernameInput.value.trim();
-    const password = passwordInput.value.trim();
-    if (!username) {
-        errorMessage.textContent = "Please enter your username or email.";
-        return;
-    }
-    if (!password) {
-        errorMessage.textContent = "Please enter your password.";
-        return;
-    }
-    if (username === "admin" && password === "password123") {
-        errorMessage.textContent = "";
-        alert("Login successful!");
-        window.location.href = "index.html";
-    } else {
-        errorMessage.textContent = "Invalid username or password. Please try again.";
-    }
-});
-    </script>
 </body>
 </html>
