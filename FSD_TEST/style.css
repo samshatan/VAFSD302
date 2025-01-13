@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+.mainbody {
+    display: flex;
+    width: 45%;
+    height: auto;
+    padding: 10px;
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.imagebox{
+    width: 300px;
+    background-color: #0b75d8;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.imagebox img{
+    width: 80%;
+    height: auto;
+    margin: 10px;
+}
+.formbox{
+    align-content: center;
+    width: 300px;
+    padding: 20px;
+}
+.formbox h2{
+    text-align: center;
+}
+.button{
+    background-color: #2e7d32; /* Dark green */
+    color: white;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+.password,.username{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.user,.pass {
+    margin-bottom: 10px;
+}
+.forgot{
+    text-align: right;
+    margin-bottom: 10px;
+}
+.forgot a{
+    text-decoration: none;
+}

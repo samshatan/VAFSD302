@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainbody">
+        <div class="imagebox">
+            <img src="https://www.themasterclass.co.in/assets/images/preparatory-hub-mobile-banner.jpg" alt="">
+        </div>
+        <div class="formbox">
+            <h2>Mastery Hub</h2>
+            <form action="">
+                <h4 class="user">Username or email:</h4><input type="text" class="username" placeholder="Username">
+                <h4 class="pass">Password:</h4><input type="text" class="password" placeholder="Password">
+                <div class="forgot">
+                    <a href="">Forgot Password</a>
+                </div>
+                <button class="button" type="submit">Sign In</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        const loginForm = document.querySelector("form");
+   const usernameInput = document.getElementById("username");
+   const passwordInput = document.getElementById("password");
+   const errorMessage = document.createElement("div");
+   errorMessage.style.color = "red";
+   errorMessage.style.marginBottom = "10px";
+   loginForm.insertBefore(errorMessage, loginForm.firstChild);
+   loginForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const username = usernameInput.value.trim();
+    const password = passwordInput.value.trim();
+    if (!username) {
+        errorMessage.textContent = "Please enter your username or email.";
+        return;
+    }
+    if (!password) {
+        errorMessage.textContent = "Please enter your password.";
+        return;
+    }
+    if (username === "admin" && password === "password123") {
+        errorMessage.textContent = "";
+        alert("Login successful!");
+        window.location.href = "index.html";
+    } else {
+        errorMessage.textContent = "Invalid username or password. Please try again.";
+    }
+});
+    </script>
+</body>
+</html>
